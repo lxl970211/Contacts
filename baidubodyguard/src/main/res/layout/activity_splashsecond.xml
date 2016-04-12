@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzptc.LiuXiaolong.baidu.activity.Splash_second_Activity"
+    android:background="#1E62D7">
+    <ImageView
+        android:id="@+id/iv_third_top"
+        style="@style/ImageViewTop"
+        android:src="@mipmap/splash_third_top"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/splash_bg_center_three"
+        />
+    <ImageView
+        android:id="@+id/iv_third_center"
+        style="@style/ImageViewCenter"
+        android:src="@mipmap/splash_third_center"
+        android:layout_below="@id/iv_third_top"/>
+    <TextView
+        android:id="@+id/tv_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_below="@id/iv_third_center"
+        android:text="@string/xuke"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_txt1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/gaijin"
+        android:button="@drawable/checkbox_selector"
+        android:checked="true"
+        android:textColor="#ffffff"/>
+    
+    <Button
+        android:id="@+id/btn_Experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="立即体验"
+        android:layout_below="@id/checkBox"
+        android:layout_margin="16dp"
+        android:background="@drawable/experience_selector" />
+</RelativeLayout>

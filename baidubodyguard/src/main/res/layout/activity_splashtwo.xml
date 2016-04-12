@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zzptc.LiuXiaolong.baidu.activity.Splash_two_Activity"
+    android:background="#1E62D7">
+    <TextView
+        android:id="@+id/two_jumpover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"/>
+
+    <ImageView
+        android:id="@+id/iv_two_top"
+        style="@style/ImageViewTop"
+        android:src="@mipmap/splash_second_top"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/splash_bg_center_two"/>
+    <ImageView
+        style="@style/ImageViewCenter"
+        android:src="@mipmap/splash_second_center"
+        android:layout_below="@id/iv_two_top"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+# BaiduBodyguard
+试用java语言写一个类似于百度手机卫士的安卓app

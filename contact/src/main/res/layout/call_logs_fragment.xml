@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tv_tie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call_logs"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#000000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/id_speeddial_underline"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#ffffff"/>
+        <TextView
+            android:id="@+id/id_alllogs_underline"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#ffffff"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_calllogs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+</LinearLayout>

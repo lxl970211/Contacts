@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:background="@drawable/dialeditshape">
+    <LinearLayout
+        android:id="@+id/id_tab_dial"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/id_tab_dial_img"
+            style="@style/TabImageButton"
+            android:src="@mipmap/og"
+            />
+        <TextView
+            android:id="@+id/id_tab_dial_text"
+            style="@style/bottomTextview"
+            android:text="@string/dial"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_tab_calllogs"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/id_tab_calllogs_img"
+            style="@style/TabImageButton"
+            android:src="@mipmap/oc"
+            />
+        <TextView
+            android:id="@+id/id_tab_calllogs_text"
+            style="@style/bottomTextview"
+            android:text="@string/call_logs"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_tab_contact"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/id_tab_contact_img"
+            style="@style/TabImageButton"
+            android:src="@mipmap/oe"
+            />
+        <TextView
+            android:id="@+id/id_tab_contact_text"
+            style="@style/bottomTextview"
+            android:text="@string/contacts"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

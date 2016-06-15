@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/id_calllogs_photo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@mipmap/sx"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                />
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/id_calllogs_name"
+            android:text="admin"
+            style="@style/callredsTextview"
+
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_callLogs_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/bochu"
+                android:scaleType="center"/>
+
+            <TextView
+                android:id="@+id/id_calllogstime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="time"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_calllogs_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="13203311093"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_calllogs_logsid"
+                android:text="1"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

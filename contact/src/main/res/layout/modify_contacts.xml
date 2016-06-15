@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:id="@+id/img_modify_return"
+            android:layout_weight="1"
+            android:src="@drawable/returnbut"
+            style="@style/ImageButton1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="修改联系人"
+            android:gravity="center"
+            style="@style/ImageButton1"/>
+        <TextView
+            android:id="@+id/tv_modify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/ImageButton1"
+            android:text="保存"
+            android:gravity="center"
+            android:onClick="savecontacts"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/img_modify_headbut"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:background="#ffffff"
+            />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/z1"/>
+            <EditText
+                android:layout_marginTop="15dp"
+                android:id="@+id/et_modify_Name"
+                style="@style/AddContactsEditView"
+                android:hint="姓名:"
+                android:inputType="text"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/xn"/>
+        <EditText
+            android:id="@+id/et_modifyphonenumber"
+            style="@style/AddContactsEditView2"
+            android:inputType="number"
+            android:maxLength="11"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/email"/>
+        <EditText
+            android:id="@+id/et_modify_email"
+            style="@style/AddContactsEditView2"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

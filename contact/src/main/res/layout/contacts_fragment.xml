@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_tie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/contacts_title"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            />
+        <ImageButton
+            android:id="@+id/img_setting"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/wu"
+            android:background="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+        <ImageButton
+            android:id="@+id/img_addcontacts"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:src="@drawable/addcontacts_selector"
+            android:layout_toLeftOf="@id/img_setting"
+            />
+        <ImageButton
+            android:id="@+id/img_searchcontacts"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/searchcontacts"
+            android:background="#ffffff"
+            android:layout_toLeftOf="@id/img_addcontacts"
+            android:layout_marginRight="15dp"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_contactslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialeditshape"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+    <ListView
+        android:id="@+id/lv_dial_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        >
+    </ListView>
+    <EditText
+        android:id="@+id/et_phonenumber"
+        android:background="@drawable/dialeditshape"
+        android:layout_width="match_parent"
+        android:hint="请输入电话号码"
+        android:textColorHint="#e0e0e0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:singleLine="true"
+        android:gravity="center"
+        android:editable="false"
+        />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+
+        <GridView
+            android:id="@+id/gv_dial"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></GridView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <ImageButton
+        android:id="@+id/img_dialaddcon"
+        android:layout_height="match_parent"
+        android:src="@drawable/dial_addconbutselector"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        style="@style/dialbut1"
+        />
+    <ImageButton
+        android:scaleType="center"
+        android:id="@+id/img_call"
+        android:layout_weight="1.5"
+        android:layout_height="40dp"
+        android:src="@mipmap/a0m"
+        android:background="@drawable/calltelselector"
+        style="@style/dialbut1"
+        />
+    <ImageButton
+        android:id="@+id/img_del"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@mipmap/a37"
+        style="@style/dialbut1"
+        android:background="#ffffff"/>
+</LinearLayout>
+
+
+</LinearLayout>

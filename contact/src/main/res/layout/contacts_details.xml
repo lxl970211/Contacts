@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <ImageButton
+            android:id="@+id/img_return"
+            style="@style/ImageButton1"
+            android:layout_weight="1"
+            android:src="@drawable/returnbut"
+           />
+
+        <TextView
+            android:id="@+id/tv_conInfo_title"
+            style="@style/ImageButton1"
+            android:layout_weight="3"
+            android:text="联系人详情"
+            android:gravity="center"
+            />
+        <ImageButton
+            android:id="@+id/imgbut_menu"
+            style="@style/ImageButton1"
+            android:layout_weight="1"
+            android:src="@drawable/infoselector"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+    <ImageView
+        android:id="@+id/iv_conInfo_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:text="姓名"/>
+    <TextView
+        style="@style/BR"/>
+    <TextView
+        android:id="@+id/tv_conInfo_name"
+        android:layout_width="match_parent"
+        android:text="admin"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话号码"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        style="@style/BR" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_conInfo_phonenumber"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="13203311093"
+            android:layout_marginLeft="30dp"
+            android:textSize="25dp"
+            />
+        <ImageButton
+            android:id="@+id/imgbut_call"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coninfobutselector"
+            android:background="#ffffff"/>
+        <ImageButton
+            android:id="@+id/imgbut_message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/contactsdetails_mesbut_selector"
+            android:background="#ffffff"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
